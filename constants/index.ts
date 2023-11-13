@@ -14,27 +14,27 @@ export const SERVICE_ITEMS= [
     },
     {
         title  : "Online Pharmacy",
-        icon : "/user.png",
+        icon : "/online_pharmacy.png",
         description : "Buy your medicine with our mobile application with a simple delivery system"
     },
     {
         title  : "Consultation",
-        icon : "/user.png",
+        icon : "/consultation.png",
         description : "Free consultation with our trusted doctors and get the best recommendations"
     },
     {
         title  : "Details Info",
-        icon : "/user.png",
+        icon : "/details.png",
         description :  "Free consultation with our trusted doctors and get the best recommendations"
     },
     {
         title  : "Emergency Care",
-        icon : "/user.png",
+        icon : "/ambulance.png",
         description : "You can get 24/7 urgent care for yourself or your children and your lovely family"
     },
     {
         title  : "Tracking",
-        icon : "/user.png",
+        icon : "/tracking.png",
         description : "Track and save your medical history and health data"
     }
 ]

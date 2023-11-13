@@ -2,26 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer utilities {
+    .btn-blue {
+        @apply border-blue-600 bg-blue-500 text-white px-8 py-3
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .btn-form{
+        @apply rounded-md w-full 
+    }
+
+    .max-container {
+        @apply mx-auto max-w-[1440px];
+    }
+
+    .padding-container {
+        @apply px-6 lg:px-6  2xl:px-0
+    }
+
+    .flexCenter {
+        @apply flex items-center justify-center
+    }
+
+    .flexBetween {
+        @apply flex items-center justify-between
+    }
+
+    .flexStart {
+        @apply flex items-center justify-start
+    }
+
+    .flexEnd {
+        @apply flex items-center justify-end
+    }
+
+    .bold-32 {
+        @apply text-[32px] font-[700] leading-[120%]
+    }
+
+    .regular-20 {
+        @apply text-[20px] font-[400];
+    }
+
+    .regular-16 {
+        @apply text-[16px] font-[400];
+    }
+
+    .bg-hero {
+        @apply w-full h-full bg-bg-hero bg-no-repeat bg-cover opacity-90
+    }
+    .bg-image {
+        @apply w-full h-full bg-no-repeat bg-cover bg-bg-image
+    }
+
+    .bg-footer {
+        @apply w-full h-full bg-cover bg-blue-600;
+    }
+
+    .input-group {
+        @apply flex border rounded-xl;
+        position : relative
+    }
+
+    .input-text {
+        @apply w-full py-2 px-8 rounded-xl border bg-slate-50;
+        @apply focus:outline-none border-none;
+    }
+
+    .input-text + *{
+        color : #CBD5E1;
+    }
+
+    .input-text:focus + * {
+        color: #6366f1;
+    }
+
+    .custom-button {
+        @apply w-full border py-3 flex justify-center gap-2 hover:bg-gray-200;
+    }
+
 }

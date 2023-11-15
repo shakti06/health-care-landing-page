@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header(){
     return(
-        <nav className="padding-container flexBetween max-container relative z-30  py-5">
+        <nav className="padding-container flexBetween max-container relative z-30  py-5 w-full sticky bg-white top-0">
             <Link href="/">
                      <Image src="/everest.jpg" alt="health-care-image" width={70} height={50}/>
             </Link>
